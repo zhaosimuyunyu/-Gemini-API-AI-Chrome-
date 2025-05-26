@@ -1,0 +1,150 @@
+/* 只保留扩展弹窗界面的样式，移除网页弹窗样式 */
+body {
+    width: 400px;
+    min-height: 500px;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: #f8f9fa;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    color: #1a73e8;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h3 {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 13px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.4;
+}
+
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+#testApi {
+    background: #34a853;
+    color: white;
+    margin-top: 8px;
+    width: 100px;
+}
+
+#testApi:hover {
+    background: #2d8f47;
+}
+
+.preset-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.preset-btn {
+    background: #f1f3f4;
+    color: #333;
+    border: 1px solid #dadce0;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.preset-btn:hover {
+    background: #e8eaed;
+}
+
+.preset-btn.active {
+    background: #1a73e8;
+    color: white;
+    border-color: #1a73e8;
+}
+
+.save-btn {
+    background: #1a73e8;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.save-btn:hover {
+    background: #1557b0;
+}
+
+.status {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.status.success {
+    background: #e8f5e8;
+    color: #2d7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.status.error {
+    background: #ffebee;
+    color: #c62828;
+    border: 1px solid #ffcdd2;
+}
+
+.section:last-child p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AI学习助手设置</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>AI学习助手设置</h2>
+        
+        <div class="section">
+            <label for="apiKey">Gemini API Key:</label>
+            <input type="password" id="apiKey" placeholder="输入你的API密钥">
+            <button id="testApi">测试连接</button>
+        </div>
+
+        <div class="section">
+            <label for="promptType">当前提示词模式:</label>
+            <select id="promptType">
+                <option value="explanation">专有名词解释</option>
+                <option value="english">英文学习</option>
+                <option value="custom">自定义</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <label for="currentPrompt">当前提示词:</label>
+            <textarea id="currentPrompt" rows="6" placeholder="在这里编辑你的提示词..."></textarea>
+        </div>
+
+        <div class="section">
+            <h3>预设提示词模板</h3>
+            <div class="preset-buttons">
+                <button class="preset-btn" data-type="explanation">专有名词解释</button>
+                <button class="preset-btn" data-type="english">英文学习</button>
+                <button class="preset-btn" data-type="translation">翻译助手</button>
+                <button class="preset-btn" data-type="summary">内容总结</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <button id="saveSettings" class="save-btn">保存设置</button>
+            <div id="status" class="status"></div>
+        </div>
+
+        <div class="section">
+            <h3>使用说明</h3>
+            <p>1. 设置你的Gemini API密钥</p>
+            <p>2. 选择或自定义提示词模板</p>
+            <p>3. 在网页上选中文本，右键选择"AI助手解释"</p>
+            <p>4. 或者选中文本后按 Ctrl+Shift+E (Mac: Cmd+Shift+E)</p>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
