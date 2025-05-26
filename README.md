@@ -70,5 +70,5 @@ chrome-extension/
 * **受限页面**: 出于安全原因，Chrome 扩展无法在 `chrome://` 开头的内部页面和 Chrome 网上应用店 (`chrome.google.com/webstore`) 上运行。在这些页面上尝试使用扩展会失败，这是正常现象。
 * **API 密钥**: 请妥善保管您的 Gemini API 密钥，不要泄露。
 
----
-```
+## 项目地址
+**https://github.com/zhaosimuyunyu/-Gemini-API-AI-Chrome-**
